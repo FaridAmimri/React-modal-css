@@ -1,5 +1,5 @@
 import React from 'react'
-import './modal.css'
+import './styles.css'
 
 function Modal({ title, content, closeIcon = "X", onClick, openModal=true, setOpenModal }) {
   if (openModal)

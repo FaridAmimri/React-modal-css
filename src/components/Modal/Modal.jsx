@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-function Modal({ title, content, closeIcon = "X", onClick, openModal=true, setOpenModal }) {
+export const Modal = ({ title, content, closeIcon = "X", onClick, openModal=true, setOpenModal }) => {
   if (openModal)
   return (
     <div className='background'>
@@ -18,4 +18,3 @@ function Modal({ title, content, closeIcon = "X", onClick, openModal=true, setOp
   )
 }
 
-export default Modal

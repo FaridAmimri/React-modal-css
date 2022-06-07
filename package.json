@@ -1,6 +1,6 @@
 {
   "name": "react-modal-css",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "react modal styled with css",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

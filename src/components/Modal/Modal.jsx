@@ -1,43 +1,21 @@
 import React from 'react'
-import './styles.css'
+import './modal.css'
 
-export function Modal({ title, content, closeIcon = "X", onClick, openModal, setOpenModal }) {
-
+function Modal({ title, content, closeIcon = "X", onClick, openModal=true, setOpenModal }) {
+  if (openModal)
   return (
     <div className='background'>
       <div className='container'>
         <div className='header'>
-          <button
-            className='btnHeader'
-            onClick={onClick}
-          >
+          <button className='closeButton' onClick={onClick}>
             {closeIcon}
           </button>
         </div>
-        <div className='title'>
-          {title}
-        </div>
-        <div className='body'>
-          {content}
-        </div>
-        <div className='footer'>
-          <button
-            className='btnFooter'
-            id='crimsonBtn'
-            onClick={onClick}
-          >
-            Back
-          </button>
-          <button
-            className='btnFooter'
-            id='blueBtn'
-            onClick={onClick}
-          >
-            Ok
-          </button>
-        </div>
+        <div className='title'>{title}</div>
+        <div className='body'>{content}</div>
       </div>
     </div>
   )
 }
 
+export default Modal

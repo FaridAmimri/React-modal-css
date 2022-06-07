@@ -6,11 +6,13 @@ A react modal styled with pure css
 
 ## Tech Stack
 
-**Client:** React
+**Client:** React 18.1.0
 
 **IDE:** Visual Studio Code
 
 **Library:** StoryBook
+
+**Server**: NodeJs Version 16.14.2
 
 **Terminal:** Npm or Yarn
 
